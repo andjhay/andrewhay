@@ -9,8 +9,6 @@ body {
 }
 
 header {
-  display: flex;
-  position: relative;
   background-color: lightseagreen;
   height: 150px;
 }
@@ -20,13 +18,13 @@ header {
   color: black;
   text-decoration: none;
   margin: 30px;
-  position: absolute;
+  position: fixed;
   left: 0;
 }
 
 .navbar {
   margin-top: 50px;
-  position: absolute;
+  position: fixed;
   right: 50px;
 }
 

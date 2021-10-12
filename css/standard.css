@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: lightseagreen;
+  background-color: #262626;
   height: auto;
   text-align: center;
   width: 100%;
@@ -22,8 +22,8 @@ main {
 
 footer {
   text-align: center;
-  color: white;
-  background-color: lightseagreen;
+  color: #f2f2f2;
+  background-color: #262626;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -31,12 +31,12 @@ footer {
 
 .logo {
   font-size: 3rem;
-  color: black;
+  color: #f2f2f2;
   text-decoration: none;
   display: inline-block;
   min-width: 300px;
   height: 60px;
-  padding: 5px;
+  padding: 15px;
 }
 
 .navbar {
@@ -44,7 +44,7 @@ footer {
   display: inline-block;
   min-width: 300px;
   height: 50px;
-  right: 20px;
+  right: 10px;
 }
 
 ul {
@@ -61,16 +61,20 @@ nav li {
 
 nav li a {
   font-size: 1.5rem;
-  color: black;
+  color: #f2f2f2;
   text-decoration: none;
 }
 
 nav li a:hover {
-  color: ivory;
+  color: #1eaaaa;
   text-decoration: none;
 }
 
 .material-icons {
   font-size: 30px;
   position: absolute;
+}
+
+.activnav {
+  color: #1eaaaa;
 }

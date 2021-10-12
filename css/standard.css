@@ -24,7 +24,7 @@ footer {
   text-align: center;
   color: white;
   background-color: lightseagreen;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }

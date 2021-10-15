@@ -2,8 +2,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0px;
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  height: 100%;
 }
 
 header {
@@ -17,12 +17,13 @@ main {
   display: block;
   text-align: center;
   flex-grow: 1;
+  background-image: linear-gradient(#262626, #1eaaaa);
 }
 
 footer {
+  font-weight: bolder;
   text-align: center;
-  color: #f2f2f2;
-  background-color: #262626;
+  color: #262626;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -81,16 +82,19 @@ nav li a:hover {
 
 .links {
   position: relative;
-  top: 60px;
+  top: 100px;
 }
 
 .button-style {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #262626;
   font-family: "Poppins", sans-serif;
   height: auto;
   position: relative;
   top: 25vh;
   border-radius: 75px;
-  background-color: #1eaaaa;
+  background-color: #f2f2f2;
   padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -98,15 +102,15 @@ nav li a:hover {
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
-  box-shadow: 3px 3px 3px #262626;
   transition: padding 1s;
 }
 
 .button-style:hover {
+  border-width: 10px;
+  border-color: #f2f2f2;
   background-color: #262626;
   color: #f2f2f2;
   text-decoration: none;
-  box-shadow: 3px 3px 3px #1eaaaa;
   padding: 50px;
   padding-left: 80px;
   padding-right: 80px;
@@ -114,17 +118,7 @@ nav li a:hover {
 
 .github1:hover + .github2 {
   background-color: #1eaaaa;
-  border-radius: 40px;
-}
-
-.github2:hover {
-  background-color: #1eaaaa;
-  border-radius: 40px;
-}
-
-.github1:hover + .github2 {
-  background-color: #1eaaaa;
-  border-radius: 40px;
+  border-radius: 75px;
 }
 
 .github2:hover {

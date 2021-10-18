@@ -29,19 +29,33 @@
   <body>
     <header>
       <a href="index.html" class="logo">Andrew Hay</a>
-      <nav class="navbar">
+      <label class="mobile_bars" for="mobile_menu">
+        <span class="material-icons">menu</span>
+      </label>
+      <input type="checkbox" id="mobile_menu" />
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li>
+          <li class="icon">
             <a href="contact.html" class="material-icons active-nav">mail</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <a class="button-style" href="mailto:contact@andrewhay.no">Email Me</a>
+      <div class="content">
+        <a class="button-style" href="mailto:contact@andrewhay.no">Email Me</a>
+        <form action="submit.php" method="post">
+          <fieldset>
+            <legend style="text-align: center">Mail List</legend>
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form_input" />
+            <input type="submit" value="Sign up" class="input_button" />
+          </fieldset>
+        </form>
+      </div>
     </main>
     <footer>
       <p>Copyright &copy;</p>

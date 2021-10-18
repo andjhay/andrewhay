@@ -1,32 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0px;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#262626, #1eaaaa) no-repeat;
 }
 
 header {
+  position: fixed;
   background-color: #262626;
   height: auto;
   text-align: center;
   width: 100%;
+  min-width: 400px;
 }
 
 main {
-  display: block;
-  text-align: center;
-  height: 100vh;
-  background-image: linear-gradient(#262626, #1eaaaa);
+  top: 110px;
+  bottom: 51px;
 }
 
 footer {
+  background-color: #262626;
   font-weight: bolder;
   text-align: center;
-  color: #262626;
+  color: #f2f2f2;
   position: fixed;
-  bottom: 0;
+  height: auto;
   width: 100%;
+  bottom: 0;
+}
+
+.content {
+  display: block;
+  padding-top: 120px;
+  top: 100px;
+  text-align: center;
+}
+
+.content li {
+  display: block;
+}
+
+/* DIV END */
+
+.home_image {
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .logo {
@@ -36,68 +61,20 @@ footer {
   display: inline-block;
   min-width: 300px;
   height: auto;
-  margin: 25px;
-}
-
-.navbar {
-  position: relative;
-  display: inline-block;
-  min-width: 300px;
-  height: 50px;
-  right: 10px;
-}
-
-ul {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  padding-inline-start: 0px;
-}
-
-nav li {
-  display: inline;
-  padding: 5px;
-  text-align: unset;
-}
-
-nav li a {
-  font-size: 1.5rem;
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  color: #1eaaaa;
-  text-decoration: none;
-}
-
-.material-icons {
-  font-size: 30px;
-  position: absolute;
-}
-
-.active-nav {
-  color: #1eaaaa;
-  opacity: 0.7;
-}
-
-.links {
-  position: relative;
-  top: 200px;
+  padding: 25px 0px 25px 25px;
 }
 
 .button-style {
+  display: inline-block;
+  margin: 20px;
   border-style: solid;
   border-width: 10px;
   border-color: #262626;
   font-family: "Poppins", sans-serif;
   height: auto;
-  position: relative;
-  top: 25vh;
   border-radius: 75px;
   background-color: #f2f2f2;
-  padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px 50px;
   color: #262626;
   text-decoration: none;
   font-size: 40px;
@@ -115,3 +92,116 @@ nav li a:hover {
   padding-left: 80px;
   padding-right: 80px;
 }
+
+.material-icons {
+  font-size: 30px;
+}
+
+.icon {
+  position: relative;
+}
+
+/* NAV START */
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  height: 30px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #1eaaaa;
+}
+
+.active-nav {
+  color: #1eaaaa;
+  opacity: 0.7;
+}
+
+nav,
+#mobile_menu {
+  display: none;
+}
+
+#mobile_menu:checked ~ nav {
+  display: block;
+}
+
+.mobile_bars {
+  color: #f2f2f2;
+  display: inline-block;
+}
+
+@media (min-width: 750px) {
+  .logo {
+    padding: 25px 50px 25px 25px;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  #mobile_menu:checked ~ nav {
+    display: inline-block;
+  }
+
+  .mobile_bars {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 50px;
+  }
+}
+
+/* NAV END */
+
+/* FORM START */
+
+.form_input {
+  display: block;
+  width: 100%;
+}
+
+fieldset {
+  color: #f2f2f2;
+  width: 250px;
+  display: inline-block;
+  text-align: left;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+label {
+}
+
+.input_button {
+  margin: 10px;
+  padding: 15px;
+  background-color: aqua;
+  border-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+/* FORM END */

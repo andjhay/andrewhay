@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+outlined"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
@@ -29,26 +33,29 @@
   <body>
     <header>
       <a href="index.html" class="logo">Andrew Hay</a>
-      <nav class="navbar">
+      <label class="mobile_bars" for="mobile_menu">
+        <span class="material-icons">menu</span>
+      </label>
+      <input type="checkbox" id="mobile_menu" />
+      <nav>
         <ul>
           <li><a href="index.html" class="active-nav">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="material-icons">mail</a></li>
+          <li class="icon">
+            <a href="contact.html" class="material-icons">mail</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <img
-        src="img\cartoonmefunnobackground.png"
-        alt="Cartoon"
-        style="
-          min-width: 250px;
-          min-height: 250px;
-          max-width: 70vw;
-          max-height: 85vh;
-        "
-      />
+      <div class="content">
+        <img
+          class="home_image"
+          src="img/cartoonmefunnobackground.png"
+          alt="Cartoon image of me"
+        />
+      </div>
     </main>
     <footer>
       <p>Copyright &copy;</p>

@@ -1,14 +1,13 @@
 html {
   height: 100%;
-  width: 100%;
 }
 
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0px;
   height: 100%;
-  width: 100%;
   background: linear-gradient(#262626, #1eaaaa) no-repeat;
+  background-attachment: fixed;
 }
 
 header {
@@ -17,12 +16,10 @@ header {
   height: auto;
   text-align: center;
   width: 100%;
-  min-width: 400px;
 }
 
 main {
-  top: 110px;
-  bottom: 51px;
+  padding-top: 110px;
 }
 
 footer {
@@ -37,21 +34,27 @@ footer {
 }
 
 .content {
-  display: block;
-  padding-top: 120px;
-  top: 100px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 150px 0px;
+}
+
+.home_content {
+  width: 100%;
+  display: inline-block;
   text-align: center;
 }
 
 .content li {
-  display: block;
+  list-style-type: none;
 }
 
 /* DIV END */
 
 .home_image {
-  max-width: 80vw;
-  max-height: 80vh;
+  max-width: 100%;
+  max-height: 85vh;
 }
 
 .logo {
@@ -60,8 +63,7 @@ footer {
   text-decoration: none;
   display: inline-block;
   min-width: 300px;
-  height: auto;
-  padding: 25px 0px 25px 25px;
+  padding: 25px 25px 10px 25px;
 }
 
 .button-style {
@@ -88,9 +90,7 @@ footer {
   background-color: #262626;
   color: #f2f2f2;
   text-decoration: none;
-  padding: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 50px 80px;
 }
 
 .material-icons {
@@ -103,8 +103,9 @@ footer {
 
 /* NAV START */
 
-nav ul {
+ul {
   padding: 0px;
+  margin: 10px;
 }
 
 nav li {
@@ -138,7 +139,8 @@ nav,
 
 .mobile_bars {
   color: #f2f2f2;
-  display: inline-block;
+  display: block;
+  padding: 10px;
 }
 
 @media (min-width: 750px) {
@@ -193,6 +195,7 @@ legend {
 }
 
 label {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .input_button {

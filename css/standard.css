@@ -130,6 +130,7 @@ h2 {
 .content {
   display: block;
   text-align: center;
+  padding-top: 30px;
 }
 
 .home_content {

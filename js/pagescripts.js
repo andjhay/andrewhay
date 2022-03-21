@@ -1,21 +1,21 @@
 // for loop
 
-for (var i = 0; i < variable.length; i++) {}
+// for (var i = 0; i < variable.length; i++) {}
 
-var heading = document.querySelector("h3");
+// var heading = document.querySelector("h3");
 
-heading.innerHTML = "Updated heading";
+// heading.innerHTML = "Updated heading";
 
-createdHtml += `
-    <div> 
-    <h5> Name = ${cats[i].name} </h5>
-    <p> Age = ${catAge} </p>
-    </div>
-    `;
+// createdHtml += `
+//     <div>
+//     <h5> Name = ${cats[i].name} </h5>
+//     <p> Age = ${catAge} </p>
+//     </div>
+//     `;
 
-    function test()
+//     function test()
 
-    test()
+//     test()
 
 // Fetch and Display API
 

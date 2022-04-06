@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Andrew Hay - Blockchain</title>
+    <title>Andrew Hay - Web3</title>
     <link rel="icon" href="img\AndrewHayIcon.png" />
     <meta name="theme-color" content="#1EAAAA" />
     <meta charset="UTF-8" />
@@ -18,32 +18,33 @@
   <body>
     <header>
       <a href="index.html" class="logo">Andrew Hay</a>
-      <label class="mobile_bars" for="mobile_menu">
+      <input type="checkbox" id="mobile-menu" />
+      <label class="mobile-bars" for="mobile-menu">
         <span class="material-icons">menu</span>
       </label>
-      <input type="checkbox" id="mobile_menu" />
+      <label class="mobile-cross" for="mobile-menu">
+        <span class="material-icons">close</span>
+      </label>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blockchain.html" class="active-nav">Blockchain</a></li>
-          <li class="icon">
-            <a href="contact.html" class="material-icons">mail</a>
-          </li>
+          <li><a href="web3.html" class="active-nav">Web3</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="content">
+        <div class="display-current-prices"></div>
         <div class="web3-compatible"></div>
-        <h1>Connect with Metamask - Only Displays account # and chain id so far</h1>
-        <button class="enableEthereumButton">Enable Ethereum</button>
-        <h2>Account: <span class="showAccount"></span></h2>
+        <h1>Connect with Metamask - Only displays info</h1>
+        <button class="enable-eth-button">Connect Metamask</button>
+        <h2 class="show-account"></h2>
       </div>
     </main>
     <footer>
       <p>Copyright &copy;</p>
+      <span class="icon"><a href="contact.html" class="material-icons">mail</a></span>
     </footer>
   </body>
 </html>

@@ -17,19 +17,18 @@
   <body>
     <header>
       <a href="index.html" class="logo">Andrew Hay</a>
-      <label class="mobile_bars" for="mobile_menu">
+      <input type="checkbox" id="mobile-menu" />
+      <label class="mobile-bars" for="mobile-menu">
         <span class="material-icons">menu</span>
       </label>
-      <input type="checkbox" id="mobile_menu" />
+      <label class="mobile-cross" for="mobile-menu">
+        <span class="material-icons">close</span>
+      </label>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html" class="active-nav">Portfolio</a></li>
-          <li><a href="blockchain.html">Blockchain</a></li>
-          <li class="icon">
-            <a href="contact.html" class="material-icons">mail</a>
-          </li>
+          <li><a href="web3.html">Web3</a></li>
         </ul>
       </nav>
     </header>
@@ -37,27 +36,27 @@
       <div class="gallery">
         <div>
           <h2>Semester 1 Course Project Noroff</h2>
-          <iframe class="website_viewer" src="https://crosscourseprojectandjhay.netlify.app/"></iframe>
+          <iframe class="website-viewer" src="https://crosscourseprojectandjhay.netlify.app/"></iframe>
           <p>
-            <a class="gallery_link" href="https://crosscourseprojectandjhay.netlify.app/" target="_blank"
+            <a class="gallery-link" href="https://crosscourseprojectandjhay.netlify.app/" target="_blank"
               >Rainydays Course Project Noroff Semester 1</a
             >
           </p>
         </div>
         <div>
           <h2>Semester 1 Project Noroff</h2>
-          <iframe class="website_viewer" src="https://semesterprojectoneandrewhaynoroff.netlify.app"></iframe>
+          <iframe class="website-viewer" src="https://semesterprojectoneandrewhaynoroff.netlify.app"></iframe>
           <p>
-            <a class="gallery_link" href="https://semesterprojectoneandrewhaynoroff.netlify.app" target="_blank"
+            <a class="gallery-link" href="https://semesterprojectoneandrewhaynoroff.netlify.app" target="_blank"
               >Community Science Museum - Noroff Semester 1</a
             >
           </p>
         </div>
         <div>
           <h2>API Call Test Project</h2>
-          <iframe class="website_viewer" src="https://starwarsstarshipsjavascriptapi.netlify.app/"></iframe>
+          <iframe class="website-viewer" src="https://starwarsstarshipsjavascriptapi.netlify.app/"></iframe>
           <p>
-            <a class="gallery_link" href="https://starwarsstarshipsjavascriptapi.netlify.app/" target="_blank"
+            <a class="gallery-link" href="https://starwarsstarshipsjavascriptapi.netlify.app/" target="_blank"
               >API Call Test Project</a
             >
           </p>
@@ -66,6 +65,7 @@
     </main>
     <footer>
       <p>Copyright &copy;</p>
+      <span class="icon"><a href="contact.html" class="material-icons">mail</a></span>
     </footer>
   </body>
 </html>

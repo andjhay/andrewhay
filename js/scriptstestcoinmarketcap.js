@@ -1,4 +1,4 @@
-// API calls to get information and market data on the 3 largest Crypto currencies, free api from coinmarketcap.com found through my own interest in the subject.
+// API calls to get information and market data on the 3 largest Crypto currencies, free api from coinmarketcap.com
 // https://pro-api.coinmarketcap.com/v2/cryptocurrency/info?symbol=BTC,ETH,BNB&CMC_PRO_API_KEY=d66c41ad-f344-4366-a1ee-5118949049fd
 // https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=BTC,ETH,BNB&CMC_PRO_API_KEY=d66c41ad-f344-4366-a1ee-5118949049fd
 

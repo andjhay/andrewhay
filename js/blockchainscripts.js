@@ -1,3 +1,6 @@
+// export default const
+// import const from "./const.js";
+
 if (typeof window.ethereum !== "undefined") {
   console.log("MetaMask is installed!");
 }

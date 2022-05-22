@@ -64,7 +64,7 @@ ul {
 
 nav li {
   display: block;
-  height: 30px;
+  height: 40px;
 }
 
 a {
@@ -95,6 +95,7 @@ nav,
 .mobile-bars {
   color: var(--custom-white);
   display: block;
+  height: 40px;
 }
 
 .mobile-cross {
@@ -170,19 +171,21 @@ h2 {
 
 div a {
   width: fit-content;
-  padding: 10px;
+  padding: 15px;
+  margin: 10px;
   border-radius: 10px;
-  margin: auto;
-  display: block;
-  border: solid 5px transparent;
+  display: inline-block;
+  border: solid 5px var(--carbon-fiber);
 }
 
 div a:hover {
   color: #f2f2f2;
-  border: solid 5px var(--custom-teal);
+  border: solid 5px var(--custom-white);
 }
 
 .website-viewer {
+  border: solid 10px var(--carbon-fiber);
+  border-radius: 50px;
   width: 90vw;
   height: 60vh;
 }
@@ -206,6 +209,14 @@ div a:hover {
 
   .mobile-bars {
     display: none;
+  }
+
+  #mobile-menu:checked ~ .mobile-cross {
+    display: none;
+  }
+
+  #mobile-menu:checked ~ nav {
+    display: inline-block;
   }
 
   nav ul {

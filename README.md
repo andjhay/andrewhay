@@ -1,6 +1,6 @@
-# Semester 1 Cross Course Project - Noroff
+# My Portfolio Site
 
-![crosscourseproject](https://user-images.githubusercontent.com/88853764/172799761-5db281a5-dc62-41c9-bea1-5210cdf4eb08.png)
+![portfolio](https://user-images.githubusercontent.com/88853764/172803468-0ad1c209-a6c2-42d3-b935-522fabfcd3fd.png)
 
 ## Description
 
@@ -32,5 +32,6 @@ npm install
 
 ## Contact
 
-[My LinkedIn page] (https://www.linkedin.com/in/andrewjameshay/)
-[My Github page] (https://github.com/andjhay)
+[My LinkedIn page] https://www.linkedin.com/in/andrewjameshay/
+
+[My Github page] https://github.com/andjhay

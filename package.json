@@ -1,0 +1,32 @@
+{
+  "name": "andrewhay.no",
+  "version": "1.0.0",
+  "description": "Personal website portfolio",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "build": "sass scss:css",
+    "watch": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andjhay/andrewhay.git"
+  },
+  "keywords": [
+    "andrew",
+    "hay",
+    "portfolio",
+    "front-end"
+  ],
+  "author": "Andrew Hay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andjhay/andrewhay/issues"
+  },
+  "homepage": "https://andrewhay.no",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.1"
+  }
+}

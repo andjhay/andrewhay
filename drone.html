@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" type="module" defer></script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN73DTNC93"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-JN73DTNC93");
+  </script>
   <body class="d-flex flex-column min-vh-100 bg-light">
     <header class="bg-primary shadow">
       <nav class="navbar navbar-expand-sm container">
@@ -63,9 +74,22 @@
       <div class="container justify-content-center p-3">
         <div class="row row-cols-1 row-cols-sm-2">
           <div class="col">
+            <img class="container py-2" src="./img/stavanger.png" alt="" />
+          </div>
+          <div class="col">
+            <img class="container py-2" src="./img/storhaug.png" alt="" />
+          </div>
+          <div class="col">
+            <img class="container py-2" src="./img/hytte.png" alt="" />
+          </div>
+          <div class="col">
+            <img class="container py-2" src="./img/egersund.png" alt="" />
+          </div>
+          <div class="col">
             <iframe
-              class="container-fluid card p-2 m-1"
+              class="container-fluid py-2"
               title="Sveio 3D V2"
+              height="250"
               frameborder="0"
               allowfullscreen
               mozallowfullscreen="true"
@@ -81,8 +105,9 @@
           </div>
           <div class="col">
             <iframe
-              class="container-fluid card p-2 m-1"
+              class="container-fluid py-2"
               title="Ullandhaug"
+              height="250"
               frameborder="0"
               allowfullscreen
               mozallowfullscreen="true"

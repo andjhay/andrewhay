@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /noroff/
+Disallow: /Noroff/
+Sitemap: https://andrewhay.no/sitemap.xml

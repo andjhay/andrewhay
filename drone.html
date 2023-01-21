@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Andrew Hay - Drone</title>
-    <link rel="icon" href="img\AndrewHayIcon.png" />
+    <link rel="icon" href="./img/andrewhaylogosmall.ico" />
     <meta name="theme-color" content="#1EAAAA" />
     <meta charset="UTF-8" />
     <meta name="description" content="Andrew Hay Drone Portfolio." />
@@ -27,7 +27,9 @@
   <body class="d-flex flex-column min-vh-100 bg-light">
     <header class="bg-primary shadow">
       <nav class="navbar navbar-expand-sm container">
-        <a class="navbar-brand text-black mx-3" href="index.html">Andrew Hay</a>
+        <a class="navbar-brand text-black mx-3" href="index.html"
+          ><img src="./img/andrewhaylogo.svg" width="200px" alt="Bootstrap icon"
+        /></a>
         <button
           class="navbar-toggler mx-4"
           type="button"
@@ -45,7 +47,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="front_end.html">Front-end</a>
+              <a class="nav-link" href="front_end.html">Front-End</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="drone.html">Drone</a>
@@ -57,33 +59,39 @@
     <main>
       <div class="container pb-3">
         <h1 class="text-center p-2">Drone Operations</h1>
-        <ul>
-          <h5>Info</h5>
-          <li>Licensed small Drone Operator in Norway - A1A3</li>
-          <li>Current Drone Model - DJI Mavic 2 Pro</li>
-          <li>Agisoft Metashape 3D Mapping and modeling</li>
-          <li>Blender 3D Model editing</li>
-        </ul>
-        <ul>
-          <h5>Available for</h5>
-          <li>Arial Photography</li>
-          <li>Mapping and 3D Imagery</li>
-        </ul>
+        <div class="row row-cols-1 row-cols-sm-2">
+          <div class="col">
+            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+              <h5>Info</h5>
+              <li>Licensed small Drone Operator in Norway - A1A3</li>
+              <li>Current Drone Model - DJI Mavic 2 Pro</li>
+              <li>Agisoft Metashape 3D Mapping and modeling</li>
+              <li>Blender 3D Model editing</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+              <h5>Available for</h5>
+              <li>Arial Photography</li>
+              <li>Mapping and 3D Imagery</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <h3 class="text-center p-2">Portfolio</h3>
       <div class="container justify-content-center p-3">
         <div class="row row-cols-1 row-cols-sm-2">
           <div class="col">
-            <img class="container py-2" src="./img/stavanger.png" alt="" />
+            <img class="container py-2" src="./img/drone/stavanger.png" alt="" />
           </div>
           <div class="col">
-            <img class="container py-2" src="./img/storhaug.png" alt="" />
+            <img class="container py-2" src="./img/drone/storhaug.png" alt="" />
           </div>
           <div class="col">
-            <img class="container py-2" src="./img/hytte.png" alt="" />
+            <img class="container py-2" src="./img/drone/hytte.png" alt="" />
           </div>
           <div class="col">
-            <img class="container py-2" src="./img/egersund.png" alt="" />
+            <img class="container py-2" src="./img/drone/egersund.png" alt="" />
           </div>
           <div class="col">
             <iframe
@@ -123,7 +131,7 @@
           </div>
         </div>
       </div>
-      <h5 class="text-center pb-3">
+      <h5 class="text-center pb-3 mb-5">
         <a href="https://sketchfab.com/AndrewHay" target="_blank" rel="noopener noreferrer"
           >View more 3D Imagery here</a
         >
@@ -142,13 +150,13 @@
       </p>
       <div class="container text-center p-2">
         <a href="https://www.linkedin.com/in/andrew-james-hay" target="_blank" rel="noopener noreferrer"
-          ><img class="img-fluid" width="90px" src="img/LI-Logo.png" alt="linkedin logo link"
+          ><img class="img-fluid" width="90px" src="./img/logo/LI-Logo.png" alt="linkedin logo link"
         /></a>
         <a href="https://www.github.com/andjhay" target="_blank" rel="noopener noreferrer">
-          <img class="img-fluid" width="60px" src="img/GitHub_Logo.png" alt="Github logo link" /><img
+          <img class="img-fluid" width="60px" src="./img/logo/GitHub_Logo.png" alt="Github logo link" /><img
             class="img-fluid"
             width="30px"
-            src="img/GitHub-Mark-120px-plus.png"
+            src="./img/logo/GitHub-Mark-120px-plus.png"
             alt="Github logo link"
           />
         </a>

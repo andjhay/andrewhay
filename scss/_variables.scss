@@ -1,6 +1,7 @@
 // Color system
 
 $main: #1eaaaa;
+$main-light: #3fbbbb;
 $main-alt: #77e3e3;
 $carbon: #262626;
 $bg: #9ec4c7;
@@ -45,6 +46,7 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $bg,
+  "vlight": $main-light,
   "dark": $dark,
 ) !default;
 
@@ -65,3 +67,8 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $navbar-light-toggler-border-color: none;
 $navbar-toggler-transition: box-shadow 0.3s ease-in-out !default;
 
+// Scroll on all pages
+
+html {
+  overflow-y: scroll;
+}

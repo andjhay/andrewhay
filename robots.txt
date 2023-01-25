@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /noroff/
-Disallow: /Noroff/
+Disallow: /img/icons/
+Disallow: /img/logo/
+Disallow: /img/languages/
 Sitemap: https://andrewhay.no/sitemap.xml

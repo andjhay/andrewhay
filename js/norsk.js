@@ -2,7 +2,7 @@ export function applyNorsk(currentPage) {
   const homeNav = document.getElementById("home");
   const content = document.getElementById("content");
   homeNav.innerHTML = "Hjem";
-  if (currentPage == "index.html") {
+  if (currentPage == "index.html" || currentPage == "") {
     content.innerHTML = `
     <p>
     Velkommen til min portefølje med utstilling av arbeid jeg har utført i Front-End utvikling og luft drone fotografi.

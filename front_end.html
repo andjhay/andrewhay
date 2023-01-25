@@ -5,7 +5,7 @@
     <link rel="icon" href="./img/andrewhaylogosmall.ico" />
     <meta name="theme-color" content="#1EAAAA" />
     <meta charset="UTF-8" />
-    <meta name="description" content="Andrew Hay Front-end Portfolio" />
+    <meta name="description" content="Andrew Hay Front-End Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
@@ -31,22 +31,22 @@
           ><img src="./img/andrewhaylogo.svg" width="200px" alt="Bootstrap icon"
         /></a>
         <button
-        class="navbar-toggler collapsed mx-4"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span id="top"></span>
-        <span id="mid"></span>
-        <span id="bot"></span>
-      </button>
+          class="navbar-toggler collapsed mx-4"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="top"></span>
+          <span id="mid"></span>
+          <span id="bot"></span>
+        </button>
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100">
             <li class="nav-item">
-              <a class="nav-link" href="./">Home</a>
+              <a id="home" class="nav-link" href="./">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="front_end.html">Front-End</a>
@@ -54,152 +54,200 @@
             <li class="nav-item">
               <a class="nav-link" href="drone.html">Drone</a>
             </li>
+            <li class="nav-item ms-md-auto">
+              <input type="radio" class="btn-check" name="language" id="norsk" autocomplete="off" />
+              <label class="btn btn-primary" for="norsk"
+                ><img src="./img/languages/no.svg" width="30px" alt=""
+              /></label>
+
+              <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" />
+              <label class="btn btn-primary" for="english"
+                ><img src="./img/languages/gb.svg" width="30px" alt=""
+              /></label>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class="container pb-3">
-        <h1 class="text-center p-2">Front-End Development</h1>
-        <h3 class="text-center p-2">My Background</h3>
+        <h1 id="main-title" class="text-center p-2">Front-End Development</h1>
+        <h3 id="background-title" class="text-center p-2"></h3>
         <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-          <li>
-            Front-end Development 2 year online studies at
-            <a
-              href="https://www.noroff.no/en/studies/vocational-school/front-end-development"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Noroff School of technology and digital media <img src="./img/logo/noroff-logo.png" width="100px"
-            /></a>
-          </li>
+          <li id="content"></li>
         </ul>
-        <h3 class="text-center p-2">My Experience</h3>
+        <h3 id="experience-title" class="text-center p-2"></h3>
         <div class="row row-cols-1 row-cols-sm-2">
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Code</h5>
-              <li>
-                npm
-                <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/npm.svg" width="20px" alt="npm icon" />
-                </a>
-              </li>
-              <li>
-                Git
-                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/git.svg" width="20px" alt="Git icon" />
-                </a>
-              </li>
-              <li>
-                Javascript
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img src="./img/icons/javascript.svg" width="20px" alt="Javascript icon" />
-                </a>
-              </li>
-              <li>
-                HTML
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/html5.svg" width="20px" alt="HTML 5 icon" />
-                </a>
-              </li>
-              <li>
-                CSS
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/css3.svg" width="20px" alt="CSS 3 icon" />
-                </a>
-              </li>
-            </ul>
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
+              <h5 id="code"></h5>
+              <table>
+                <tr>
+                  <td><li>npm</li></td>
+                  <td>
+                    <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/npm.svg" width="20px" alt="npm icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Git</li></td>
+                  <td>
+                    <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/git.svg" width="20px" alt="Git icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Javascript</li></td>
+                  <td>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="./img/icons/javascript.svg" width="20px" alt="Javascript icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>HTML</li></td>
+                  <td>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="./img/icons/html5.svg" width="20px" alt="HTML 5 icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>CSS</li></td>
+                  <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/css3.svg" width="20px" alt="CSS 3 icon" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Frameworks</h5>
-              <li>
-                Bootstrap
-                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/bootstrap-logo.svg" width="20px" alt="Bootstrap icon" />
-                </a>
-              </li>
-              <li>
-                Wordpress
-                <a href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/wordpress.svg" width="20px" alt="Wordpress icon" />
-                </a>
-              </li>
-            </ul>
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
+              <h5 id="frameworks"></h5>
+              <table>
+                <tr>
+                  <td><li>Bootstrap</li></td>
+                  <td>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/bootstrap-logo.svg" width="20px" alt="Bootstrap icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Wordpress</li></td>
+                  <td>
+                    <a href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/wordpress.svg" width="20px" alt="Wordpress icon" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Programs</h5>
-              <li>
-                Github
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/github.svg" width="20px" alt="Github icon" />
-                </a>
-              </li>
-              <li>
-                Adobe (Photoshop, XD, Illustrator)
-                <a href="https://www.adobe.com/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/adobe.svg" width="20px" alt="Adobe icon" />
-                </a>
-              </li>
-              <li>
-                Visual Studio Code
-                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
-                  <img src="./img/icons/visualstudiocode.svg" width="20px" alt="VSCode icon"
-                /></a>
-              </li>
-            </ul>
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
+              <h5 id="applications"></h5>
+              <table>
+                <tr>
+                  <td><li>Github</li></td>
+                  <td>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/github.svg" width="20px" alt="Github icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Adobe (Photoshop, XD, Illustrator)</li></td>
+                  <td>
+                    <a href="https://www.adobe.com/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/adobe.svg" width="20px" alt="Adobe icon" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Visual Studio Code</li></td>
+                  <td>
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/icons/visualstudiocode.svg" width="20px" alt="VSCode icon"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Planning (Kanban, Gantt)</h5>
-              <li>
-                Trello
-                <a href="https://trello.com/u/andrewjhay/boards" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/trello.svg" width="20px" alt="Trello icon" />
-                </a>
-              </li>
-            </ul>
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
+              <h5 id="planning"></h5>
+              <table>
+                <tr>
+                  <td><li>Trello</li></td>
+                  <td>
+                    <a href="https://trello.com/u/andrewjhay/boards" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/trello.svg" width="20px" alt="Trello icon" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Browser Integration</h5>
-              <li>
-                WCAG
-                <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/w3c.svg" width="20px" alt="W3C icon"
-                /></a>
-              </li>
-              <li>
-                Google Search Console (SEO)
-                <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/google.svg" width="20px" alt="Google icon"
-                /></a>
-              </li>
-            </ul>
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
+              <h5 id="browser"></h5>
+              <table>
+                <tr>
+                  <td><li>WCAG</li></td>
+                  <td>
+                    <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/w3c.svg" width="20px" alt="W3C icon"
+                    /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Google Search Console (SEO)</li></td>
+                  <td>
+                    <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/google.svg" width="20px" alt="Google icon"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+            <div class="bg-vlight rounded-4 border-0 shadow m-3 p-3">
               <h5>Back-End</h5>
-              <li>
-                Node.js
-                <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/nodejs.svg" width="40px" alt="Node.js icon"
-                /></a>
-              </li>
-              <li>
-                Prisma
-                <a href="https://www.prisma.io/" target="_blank" rel="noopener noreferrer"
-                  ><img src="./img/icons/prisma.svg" width="40px" alt="Prisma icon"
-                /></a>
-              </li>
-            </ul>
+              <table>
+                <tr>
+                  <td><li>Node.js</li></td>
+                  <td>
+                    <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/nodejs.svg" width="40px" alt="Node.js icon"
+                    /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><li>Prisma</li></td>
+                  <td>
+                    <a href="https://www.prisma.io/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/icons/prisma.svg" width="40px" alt="Prisma icon"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-        <h3 class="text-center p-2">Portfolio</h3>
+        <h3 id="portfolio-title" class="text-center p-2"></h3>
         <div class="card p-3 m-3 shadow">
           <h2>Vardeneset Idrettsforening</h2>
           <iframe src="https://vardenesetif.no" height="600px"></iframe>

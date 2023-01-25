@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100">
             <li class="nav-item">
-              <a class="nav-link" href="./">Home</a>
+              <a id="home" class="nav-link" href="./">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="front_end.html">Front-End</a>
@@ -54,33 +54,27 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="drone.html">Drone</a>
             </li>
+            <li class="nav-item ms-md-auto">
+              <input type="radio" class="btn-check" name="language" id="norsk" autocomplete="off" />
+              <label class="btn btn-primary" for="norsk"
+                ><img src="./img/languages/no.svg" width="30px" alt=""
+              /></label>
+
+              <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" />
+              <label class="btn btn-primary" for="english"
+                ><img src="./img/languages/gb.svg" width="30px" alt=""
+              /></label>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class="container pb-3">
-        <h1 class="text-center p-2">Drone Operations</h1>
-        <div class="row row-cols-1 row-cols-sm-2">
-          <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Info</h5>
-              <li>Licensed small Drone Operator in Norway - A1A3</li>
-              <li>Current Drone Model - DJI Mavic 2 Pro</li>
-              <li>Agisoft Metashape 3D Mapping and modeling</li>
-              <li>Blender 3D Model editing</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
-              <h5>Available for</h5>
-              <li>Arial Photography</li>
-              <li>Mapping and 3D Imagery</li>
-            </ul>
-          </div>
-        </div>
+        <h1 id="main-title" class="text-center p-2">Drone Operations</h1>
+        <div id="content" class="row row-cols-1 row-cols-sm-2"></div>
       </div>
-      <h3 class="text-center p-2">Portfolio</h3>
+      <h3 id="portfolio-title" class="text-center p-2">Portfolio</h3>
       <div class="container justify-content-center p-3">
         <div class="row row-cols-1 row-cols-sm-2">
           <div class="col">
@@ -134,7 +128,7 @@
         </div>
       </div>
       <h5 class="text-center pb-3 mb-5">
-        <a href="https://sketchfab.com/AndrewHay" target="_blank" rel="noopener noreferrer"
+        <a id="see-more" href="https://sketchfab.com/AndrewHay" target="_blank" rel="noopener noreferrer"
           >View more 3D Imagery here</a
         >
       </h5>

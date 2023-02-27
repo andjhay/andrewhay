@@ -11,17 +11,16 @@ export function applyEnglish(currentPage) {
   const planning = document.getElementById("planning");
   const applications = document.getElementById("applications");
   const browser = document.getElementById("browser");
-  homeNav.innerHTML = "Home";
-  if (currentPage == "") {
+  homeNav.innerHTML = "<b>Home</b>";
+  if (currentPage == "" || currentPage == "index") {
     content.innerHTML = `
     <p>
     Welcome to my portfolio displaying work I have done in Front-End development and arial drone photography.
     <br />
-    Operating under my own company Hay Freelance I am able to take on any assignment locally or remote.<br />
+    Operating under my own company in Norway as Hay Freelance I am available for work.<br />
   </p>
   <p>
-    Please contact me if you have any questions or looking for a quote. <br />
-    <a href="mailto: contact@andrewhay.no"> contact@andrewhay.no </a>
+    Please send any questions to <a href="mailto: contact@andrewhay.no">contact@andrewhay.no</a>
   </p>`;
   }
   if (currentPage == "front_end") {
@@ -47,16 +46,16 @@ export function applyEnglish(currentPage) {
     portfolioTitle.innerHTML = "Portfolio";
     content.innerHTML = `
     <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+            <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
               <h5>Info</h5>
               <li>Licensed small Drone Operator in Norway - A1A3</li>
-              <li>Current Drone Model - DJI Mavic 2 Pro</li>
+              <li>Current Drone - DJI Mavic 2 Pro</li>
               <li>Agisoft Metashape 3D Mapping and modeling</li>
               <li>Blender 3D Model editing</li>
             </ul>
           </div>
           <div class="col">
-            <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+            <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
               <h5>Available for</h5>
               <li>Arial Photography</li>
               <li>3D Mapping and Imagery</li>

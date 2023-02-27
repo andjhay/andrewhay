@@ -13,20 +13,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" type="module" defer></script>
   </head>
-  <!-- Google tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN73DTNC93"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-JN73DTNC93");
-  </script>
-  <!-- Google tag -->
-  <body class="d-flex flex-column min-vh-100 bg-light">
-    <header class="bg-primary shadow">
+  <body class="d-flex flex-column min-vh-100 bg-background">
+    <header>
       <nav class="navbar navbar-expand-md container">
         <a class="navbar-brand mx-3" href="./"
           ><img src="./img/andrewhaylogo.svg" width="200px" alt="Bootstrap icon"
@@ -47,24 +35,20 @@
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
           <ul class="navbar-nav w-100">
             <li class="nav-item">
-              <a id="home" class="nav-link active" aria-current="page" href="./">Home</a>
+              <a id="home" class="nav-link active" aria-current="page" href="./"><b>Home</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="front_end.html">Front-End</a>
+              <a class="nav-link" href="front_end.html"><b>Front-End</b></a>
             </li>
             <li class="nav-item mb-2 mb-md-0">
-              <a class="nav-link" href="drone.html">Drone</a>
+              <a class="nav-link" href="drone.html"><b>Drone</b></a>
             </li>
             <li class="nav-item ms-md-auto">
               <input type="radio" class="btn-check" name="language" id="norsk" autocomplete="off" />
-              <label class="btn btn-primary" for="norsk"
-                ><img src="./img/languages/no.svg" width="30px" alt=""
-              /></label>
+              <label class="btn" for="norsk"><img src="./img/languages/no.svg" width="30px" alt="" /></label>
 
               <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" />
-              <label class="btn btn-primary" for="english"
-                ><img src="./img/languages/gb.svg" width="30px" alt=""
-              /></label>
+              <label class="btn" for="english"><img src="./img/languages/gb.svg" width="30px" alt="" /></label>
             </li>
           </ul>
         </div>
@@ -73,7 +57,7 @@
     <main>
       <div class="container pb-3">
         <h1 class="text-center p-2">Hay Freelance</h1>
-        <div id="content" class="bg-vlight rounded-4 border-0 shadow m-3 p-3"></div>
+        <div id="content" class="bg-primary-light rounded-4 border-0 shadow m-3 p-3"></div>
       </div>
     </main>
     <footer class="bg-primary mt-auto text-center">

@@ -11,17 +11,16 @@ export function applyNorsk(currentPage) {
   const planning = document.getElementById("planning");
   const applications = document.getElementById("applications");
   const browser = document.getElementById("browser");
-  homeNav.innerHTML = "Hjem";
-  if (currentPage == "") {
+  homeNav.innerHTML = "<b>Hjem</b>";
+  if (currentPage == "" || currentPage == "index") {
     content.innerHTML = `
     <p>
-    Velkommen til min portefølje med utstilling av arbeid jeg har utført i Front-End utvikling og luft drone fotografi.
+    Velkommen til min portefølje med utstilling av arbeid jeg har utført i Front-End utvikling og drone fotografi.
     <br />
-    Arbeidende i mitt eget enkeltpersonforetak Hay Freelance har jeg muligheten til å ta på meg arbeid både lokalt og fjernt.<br />
+    Arbeidende i mitt eget enkeltpersonforetak Hay Freelance har jeg muligheten til utføre forskjellige oppdrag.<br />
   </p>
   <p>
-    Venligst ta kontakt om du har spørsmål. <br />
-    <a href="mailto: contact@andrewhay.no"> contact@andrewhay.no </a>
+    Venligst ta kontakt med spørsmål til <a href="mailto: contact@andrewhay.no">contact@andrewhay.no</a>
   </p>`;
   }
   if (currentPage == "front_end") {
@@ -47,16 +46,16 @@ export function applyNorsk(currentPage) {
     portfolioTitle.innerHTML = "Portefølje";
     content.innerHTML = `
     <div class="col">
-    <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+    <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
       <h5>Info</h5>
       <li>Lisensiert Liten Droneoperatør i Norge - A1A3</li>
-      <li>Nåværende Drone Model - DJI Mavic 2 Pro</li>
-      <li>Agisoft Metashape 3D kartlegging og modellgenerering</li>
+      <li>Nåværende Drone - DJI Mavic 2 Pro</li>
+      <li>Agisoft Metashape 3D kartlegging og modelgenerering</li>
       <li>Blender 3D Model redigering</li>
     </ul>
   </div>
   <div class="col">
-    <ul class="bg-vlight rounded-4 border-0 shadow m-3 py-3">
+    <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
       <h5>Tilgjengelig til</h5>
       <li>Luft Fotografi</li>
       <li>3D Kartlegging og Bilder </li>

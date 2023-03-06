@@ -53,9 +53,13 @@ html {
 
 // Language toggler
 
-.btn-check + .btn {
-  opacity: 40%;
+.btn-check:not(:checked) + .btn {
+  opacity: 0.4;
   border: none;
+}
+
+.btn-check:not(:checked) + .btn:hover {
+  opacity: 1;
 }
 
 .btn-check:checked + .btn {

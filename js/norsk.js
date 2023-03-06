@@ -16,12 +16,11 @@ export function applyNorsk(currentPage) {
     content.innerHTML = `
     <p>
     Velkommen til min portefølje med utstilling av arbeid jeg har utført i Front-End utvikling og drone fotografi.
+    </p>
     <br />
-    Arbeidende i mitt eget enkeltpersonforetak Hay Freelance har jeg muligheten til utføre forskjellige oppdrag.<br />
-  </p>
-  <p>
+    <p>
     Venligst ta kontakt med spørsmål til <a href="mailto: contact@andrewhay.no">contact@andrewhay.no</a>
-  </p>`;
+    </p>`;
   }
   if (currentPage == "front_end") {
     mainTitle.innerHTML = "Front-End Utvikling";

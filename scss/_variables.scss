@@ -43,6 +43,7 @@ $theme-colors: (
   "primary-alt": $main-alt,
   "primary-light": $main-light,
   "background": $bg,
+  "background-black": $black,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -60,11 +61,9 @@ $link-hover-color: $main-alt !default;
 // $font-family-base: "Source Code Pro", "Roboto", "Segoe UI";
 
 // Nav Sass
-
-$nav-link-hover-color: $secondary;
-
+$navbar-light-color: $main;
 $navbar-light-hover-color: $main-alt;
-$navbar-light-active-color: $main-alt;
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$carbon}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-active-color: $light;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$main}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 $navbar-light-toggler-border-color: none;
 $navbar-toggler-transition: box-shadow 0.3s ease-in-out !default;

@@ -16,12 +16,11 @@ export function applyEnglish(currentPage) {
     content.innerHTML = `
     <p>
     Welcome to my portfolio displaying work I have done in Front-End development and arial drone photography.
+    </p>
     <br />
-    Operating under my own company in Norway as Hay Freelance I am available for work.<br />
-  </p>
-  <p>
+    <p>
     Please send any questions to <a href="mailto: contact@andrewhay.no">contact@andrewhay.no</a>
-  </p>`;
+    </p>`;
   }
   if (currentPage == "front_end") {
     mainTitle.innerHTML = "Front-End Development";

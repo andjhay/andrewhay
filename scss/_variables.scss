@@ -36,7 +36,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-300 !default;
-$dark: $gray-900 !default;
+$dark: $gray-700 !default;
 
 $theme-colors: (
   "primary": $main,
@@ -56,7 +56,7 @@ $theme-colors: (
 // Links
 
 $link-color: $black !default;
-$link-hover-color: $main-alt !default;
+$link-hover-color: $main !default;
 
 // $font-family-base: "Source Code Pro", "Roboto", "Segoe UI";
 

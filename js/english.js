@@ -1,6 +1,7 @@
 export function applyEnglish(currentPage) {
   const homeNav = document.getElementById("home");
   const content = document.getElementById("content");
+  const info = document.getElementById("info");
   const mainTitle = document.getElementById("main-title");
   const backgroundTitle = document.getElementById("background-title");
   const experienceTitle = document.getElementById("experience-title");
@@ -11,55 +12,59 @@ export function applyEnglish(currentPage) {
   const planning = document.getElementById("planning");
   const applications = document.getElementById("applications");
   const browser = document.getElementById("browser");
+  const button = document.getElementById("gotoportfolio");
+  const noroffLogo = document.getElementById("norofflogo");
   homeNav.innerHTML = "<b>Home</b>";
   if (currentPage == "" || currentPage == "index") {
     content.innerHTML = `
     <p>
     Welcome to my portfolio displaying work I have done in Front-End development and arial drone photography.
     </p>
-    <br />
     <p>
-    Please send any questions to <a href="mailto: contact@andrewhay.no">contact@andrewhay.no</a>
-    </p>`;
+    Please send any questions to <a href="mailto: contact@andrewhay.no"><b>contact@andrewhay.no</b></a>
+    </p>
+    <p>
+          Hay Freelance - Org nr
+          <a
+            href="https://data.brreg.no/enhetsregisteret/oppslag/enheter/927481189"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            927 481 189</a
+          >
+        </p>`;
+    button.innerHTML = `To Front-End Portfolio`;
   }
   if (currentPage == "front_end") {
     mainTitle.innerHTML = "Front-End Development";
     backgroundTitle.innerHTML = "My Background";
     experienceTitle.innerHTML = "My Experience";
     portfolioTitle.innerHTML = "Portfolio";
-    code.innerHTML = "Kode";
+    code.innerHTML = "Code";
     frameworks.innerHTML = "Frameworks";
     planning.innerHTML = "Planning (Kanban, Gantt)";
     applications.innerHTML = "Applications";
     browser.innerHTML = "Browser Integration";
-    content.innerHTML = `Front-End Development 2 year online studies at
-    <a
-      href="https://www.noroff.no/en/studies/vocational-school/front-end-development"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Noroff School of technology and digital media <img src="./img/logo/noroff-logo.png" width="100px"
-    /></a>`;
+    content.innerHTML = "Front-End Development 2 year online studies at";
   }
   if (currentPage == "drone") {
-    mainTitle.innerHTML = "Drone Flights";
+    mainTitle.innerHTML = "Drone Operations";
     portfolioTitle.innerHTML = "Portfolio";
+    info.innerHTML = `
+    <ul>
+      <h5>Info</h5>
+      <li>Licensed small Drone Operator in Norway - A1A3</li>
+      <li>Current Drone - DJI Mavic 2 Pro</li>
+      <li>Agisoft Metashape 3D Mapping and modeling</li>
+      <li>Blender 3D Model editing</li>
+    </ul>`;
+
     content.innerHTML = `
-    <div class="col">
-            <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
-              <h5>Info</h5>
-              <li>Licensed small Drone Operator in Norway - A1A3</li>
-              <li>Current Drone - DJI Mavic 2 Pro</li>
-              <li>Agisoft Metashape 3D Mapping and modeling</li>
-              <li>Blender 3D Model editing</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="bg-primary-light rounded-4 border-0 shadow m-3 py-3">
-              <h5>Available for</h5>
-              <li>Arial Photography</li>
-              <li>3D Mapping and Imagery</li>
-            </ul>
-          </div>`;
+    <ul>
+      <h5>Available for</h5>
+      <li>Arial Photography</li>
+      <li>3D Mapping and Imagery</li>
+    </ul>`;
 
     seeMore.innerHTML = "View more 3D imagery here";
   }

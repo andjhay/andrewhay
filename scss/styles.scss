@@ -51,7 +51,7 @@ html {
   transform: translate(0%, 0%) rotate(0deg);
 }
 
-// Language toggler
+// Togglers
 
 .btn-check:not(:checked) + .btn {
   opacity: 0.4;
@@ -65,4 +65,12 @@ html {
 .btn-check:checked + .btn {
   opacity: 100%;
   border: none;
+}
+
+svg path {
+  fill: $light;
+}
+
+#logo path {
+  fill: $main;
 }

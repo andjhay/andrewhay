@@ -103,7 +103,7 @@ export function loadPortfolio() {
   portfolioProjects.forEach((project, i) => {
     if (project.xd_link == "") {
       portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
-          <h3 class="py-3 text-decoration-underline">${project.title}</h3>
+          <h3 class="py-3">${project.title}</h3>
           <h4 class="pt-3 text-center border-bottom border-2 border-secondary">Final Site</h4>
           <div id="site-images${i}" class="row row-cols-1 row-cols-lg-2 text-center">
           </div>
@@ -124,7 +124,7 @@ export function loadPortfolio() {
         </div>`;
     } else {
       portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
-          <h3 class="py-3 text-decoration-underline">${project.title}</h3>
+          <h3 class="py-3">${project.title}</h3>
           <h4 class="pt-3 text-center border-bottom border-2 border-secondary">Design Process</h4>
           <div id="design-images${i}" class="row row-cols-1 row-cols-lg-2 text-center">
           </div>

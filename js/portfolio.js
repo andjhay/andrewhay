@@ -14,7 +14,7 @@ const portfolioProjects = [
       "I was hired to redesign with the aim of modernising and simplifying the website. This involved changing hosting provider, coding the site using bootstrap with a wordpress backend and adjusting the google search results to display the site accurately.",
     xd_link: "https://xd.adobe.com/view/bf186c63-3bb4-45b0-a402-ff98fe33d723-ea4b/",
     web_link: "https://vardenesetif.no",
-    github_link: "https://github.com/andjhay/VardenesetIF",
+    github_link: "",
   },
   {
     title: "Noroff Project - Auction Site",
@@ -101,29 +101,7 @@ export function loadPortfolio() {
   const portfolioContent = document.getElementById("portfolio-content");
 
   portfolioProjects.forEach((project, i) => {
-    if (project.xd_link == "") {
-      portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
-          <h3 class="py-3">${project.title}</h3>
-          <h4 class="pt-3 text-center border-bottom border-2 border-secondary">Final Site</h4>
-          <div id="site-images${i}" class="row row-cols-1 row-cols-lg-2 text-center">
-          </div>
-          <h4 class="pt-3 border-top border-2 border-secondary">About the project:</h4>
-          <p>
-            ${project.description}
-          </p>
-          <p>
-            <a href="${project.web_link}" target="_blank" rel="noopener noreferrer"
-              ><b>Link to the live site at ${project.web_link}</b></a
-            >
-          </p>
-          <p>
-            <a href="${project.github_link}" target="_blank" rel="noopener noreferrer"
-              ><b>Github Repository</b></a
-            >
-          </p>
-        </div>`;
-    } else {
-      portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
+    portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
           <h3 class="py-3">${project.title}</h3>
           <h4 class="pt-3 text-center border-bottom border-2 border-secondary">Design Process</h4>
           <div id="design-images${i}" class="row row-cols-1 row-cols-lg-2 text-center">
@@ -135,26 +113,38 @@ export function loadPortfolio() {
           <p>
             ${project.description}
           </p>
-          <p>
+          ${
+            project.web_link != ""
+              ? `<p>
             <a
               href="${project.xd_link}"
               target="_blank"
               rel="noopener noreferrer"
               ><b>Link to Adobe XD to see the rest of the prototype design.</b>
             </a>
-          </p>
-          <p>
+          </p>`
+              : ``
+          }
+          ${
+            project.web_link != ""
+              ? `<p>
             <a href="${project.web_link}" target="_blank" rel="noopener noreferrer"
               ><b>Link to the live site at ${project.web_link}</b></a
             >
-          </p>
-          <p>
+          </p>`
+              : ``
+          }
+          ${
+            project.github_link != ""
+              ? `<p>
             <a href="${project.github_link}" target="_blank" rel="noopener noreferrer"
               ><b>Github Repository</b></a
             >
-          </p>
+          </p>`
+              : ``
+          }
         </div>`;
-    }
+
     const designImages = document.getElementById(`design-images${i}`);
     project.design_images.forEach((img) => {
       designImages.innerHTML += `<div class="col py-2 px-4 m-auto">

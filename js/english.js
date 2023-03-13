@@ -26,7 +26,7 @@ export function applyEnglish(currentPage) {
     <p>
           Hay Freelance - Org nr
           <a
-            href="https://data.brreg.no/enhetsregisteret/oppslag/enheter/927481189"
+            href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=927481189"
             target="_blank"
             rel="noopener noreferrer"
           >

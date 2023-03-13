@@ -114,7 +114,7 @@ export function loadPortfolio() {
             ${project.description}
           </p>
           ${
-            project.web_link != ""
+            project.xd_link != ""
               ? `<p>
             <a
               href="${project.xd_link}"

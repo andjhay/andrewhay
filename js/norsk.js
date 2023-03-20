@@ -20,7 +20,7 @@ export function applyNorsk(currentPage) {
     Formålet med denne siden er å vise frem min portefølje av Front-End utviklet prosject og et overblikk av mine ferdigheter som utvikler.
     </p>
     
-    <p>For øyeblikket arbeider jeg selvstendig i mellomtiden mens jeg aktivt søker fulltids stilling som utvikler. <br/>
+    <p>For øyeblikket arbeider jeg selvstendig mens jeg aktivt søker en fulltids stilling som utvikler. <br/>
     Hay Freelance - Org nr
     <a
       href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=927481189"

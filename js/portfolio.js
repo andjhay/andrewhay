@@ -1,7 +1,7 @@
 const portfolioProjects = [
   {
     title: "Vardeneset Idrettsforening",
-    keywords: ["Bootstrap", "Wordpress Backend", "Google SEO", "Javascript", "HTML", "CSS", "SASS"],
+    keywords: ["Bootstrap", "Wordpress API", "Google SEO", "Javascript", "HTML", "CSS", "SASS"],
     design_images: [
       { title: "The original site", src: "img/process/vardenesetfullsize4kscreen.png", width: "100%" },
       { title: "Mobile design concept", src: "img/process/vardenesetmobiledesign.png", width: "50%" },
@@ -20,7 +20,7 @@ const portfolioProjects = [
   },
   {
     title: "Noroff Project - Auction Site",
-    keywords: ["Bootstrap", "API", "Javascript", "HTML", "CSS", "SASS"],
+    keywords: ["Bootstrap", "REST API", "Javascript", "HTML", "CSS", "SASS"],
     design_images: [
       { title: "Style tile", src: "img/process/auctionstyletile.png", width: "100%" },
       { title: "Project timeline", src: "img/process/auctionprojecttimeframe.png", width: "100%" },
@@ -39,7 +39,7 @@ const portfolioProjects = [
   },
   {
     title: "Noroff Project - Shop (Rainydays)",
-    keywords: ["Wordpress Backend", "Javascript", "HTML", "CSS"],
+    keywords: ["Wordpress API", "Javascript", "HTML", "CSS"],
     design_images: [
       { title: "Style tile", src: "img/process/rainydaysstyletile.png", width: "100%" },
       { title: "Mobile XD prototype", src: "img/process/rainydaysmobiledesign.png", width: "100%" },
@@ -91,7 +91,7 @@ const portfolioProjects = [
   },
   {
     title: "Noroff Project - Blog",
-    keywords: ["Wordpress Backend", "Javascript", "HTML", "CSS"],
+    keywords: ["Wordpress API", "Javascript", "HTML", "CSS"],
     design_images: [
       { title: "", src: "img/process/blogstyletile.png", width: "100%" },
       { title: "", src: "img/process/blogmobiledesign.png", width: "100%" },

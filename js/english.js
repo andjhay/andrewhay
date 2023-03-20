@@ -22,7 +22,7 @@ export function applyEnglish(currentPage) {
     </p>
     
     <p>
-    Currently I am working in my own self-employment to fill time as I am actively applying for fulltime positions as a developer.<br/>
+    Currently I am working on my own as self-employed to fill time as I am actively applying for fulltime positions as a developer.<br/>
     Hay Freelance - Org nr
     <a
     href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=927481189"

@@ -1,3 +1,2 @@
 https://andrewhay.no
-https://andrewhay.no/drone.html
-https://andrewhay.no/front_end.html
+https://andrewhay.no/portfolio.html

@@ -93,8 +93,8 @@ const portfolioProjects = [
     title: "Noroff Project - Blog",
     keywords: ["Wordpress API", "Javascript", "HTML", "CSS"],
     design_images: [
-      { title: "", src: "img/process/blogstyletile.png", width: "100%" },
-      { title: "", src: "img/process/blogmobiledesign.png", width: "100%" },
+      { title: "Style Tile", src: "img/process/blogstyletile.png", width: "100%" },
+      { title: "Mobile XD Prototype", src: "img/process/blogmobiledesign.png", width: "100%" },
     ],
     site_images: [
       { title: "", src: "img/process/blogfull.png", width: "100%" },
@@ -167,9 +167,9 @@ export function loadPortfolio() {
       keywords.innerHTML += `<li class="list-group-item">${word}</li>`;
     });
     const designImages = document.getElementById(`design-images${i}`);
-    project.design_images.forEach((img) => {
+    project.design_images.forEach((img, index) => {
       designImages.innerHTML += `<div class="col py-2 px-4 m-auto">
-      <h6>${img.title}</h6>
+      <h6>${index + 1 + ". "}${img.title}</h6>
       <img src="${img.src}" width="${img.width}" alt="" />
     </div>`;
     });

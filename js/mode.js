@@ -30,8 +30,8 @@ function applyMode(mode) {
   const body = document.querySelector("body");
   const footer = document.querySelector("footer");
   const changeDiv = document.querySelectorAll("div[data-id='1']");
-  const button = document.getElementById("gotoportfolio");
-  const noroffLogo = document.getElementById("norofflogo");
+  const button = document.getElementById("go-to-portfolio");
+  const noroffLogo = document.getElementById("noroff-logo");
   html.setAttribute("data-bs-theme", `${mode}`);
   if (mode == "dark") {
     if (button) {

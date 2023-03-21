@@ -1,6 +1,7 @@
 export function applyNorsk(currentPage) {
   const homeNav = document.getElementById("home");
   const content = document.getElementById("content");
+  const about = document.getElementById("about");
   const mainTitle = document.getElementById("main-title");
   const backgroundTitle = document.getElementById("background-title");
   const skillsTitle = document.getElementById("skills-title");
@@ -14,6 +15,7 @@ export function applyNorsk(currentPage) {
   const management = document.getElementById("management");
   homeNav.innerHTML = "<b>Hjem</b>";
   if (currentPage == "" || currentPage == "index") {
+    about.innerHTML = "Om Meg";
     content.innerHTML = `
     <p>Mitt navn er Andrew Hay, <br/>
     jeg er ny som utvikler og vil ha fullført et 2 års program med hoved fokus på Front-End ved begynnelsen av sommeren 2023. <br/>

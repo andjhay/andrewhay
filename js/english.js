@@ -1,5 +1,6 @@
 export function applyEnglish(currentPage) {
   const homeNav = document.getElementById("home");
+  const about = document.getElementById("about");
   const content = document.getElementById("content");
   const mainTitle = document.getElementById("main-title");
   const backgroundTitle = document.getElementById("background-title");
@@ -14,6 +15,7 @@ export function applyEnglish(currentPage) {
   const button = document.getElementById("go-to-portfolio");
   homeNav.innerHTML = "<b>Home</b>";
   if (currentPage == "" || currentPage == "index") {
+    about.innerHTML = "About Me"
     content.innerHTML = `
     <p>
     My name is Andrew Hay, <br/>

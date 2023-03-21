@@ -160,24 +160,58 @@ export function loadPortfolio() {
           </p>`
               : ``
           }
-        </div>`;
+        </div><div id="modals"></div>`;
 
     const keywords = document.getElementById(`keywords${i}`);
     project.keywords.forEach((word) => {
       keywords.innerHTML += `<li class="list-group-item">${word}</li>`;
     });
+
     const designImages = document.getElementById(`design-images${i}`);
+    const siteImages = document.getElementById(`site-images${i}`);
+    const modalsDiv = document.getElementById(`modals`);
+
     project.design_images.forEach((img, index) => {
+      modalsDiv.innerHTML += `
+      <div class="modal fade" id="design${i}${index}Modal" tabindex="-1" aria-labelledby="design${i}${index}ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="design${i}${index}ModalLabel">${img.title}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+            <img class="img-fluid" src="${img.src}" alt="${img.title}"/>
+            </div>
+          </div>
+        </div>
+      </div>`;
       designImages.innerHTML += `<div class="col py-2 px-4 m-auto">
       <h6>${index + 1 + ". "}${img.title}</h6>
-      <img src="${img.src}" width="${img.width}" alt="" />
+      <img type="button" data-bs-toggle="modal" data-bs-target="#design${i}${index}Modal" src="${img.src}" width="${
+        img.width
+      }" alt="${img.title}" />
     </div>`;
     });
-    const siteImages = document.getElementById(`site-images${i}`);
-    project.site_images.forEach((img) => {
+
+    project.site_images.forEach((img, index) => {
+      modalsDiv.innerHTML += `
+      <div class="modal fade" id="site${i}${index}Modal" tabindex="-1" aria-labelledby="site${i}${index}ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="site${i}${index}ModalLabel">${img.title}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+            <img class="img-fluid" src="${img.src}" alt="${img.title}"/>
+            </div>
+          </div>
+        </div>
+      </div>`;
       siteImages.innerHTML += `<div class="col py-2 px-4 m-auto">
       <h6>${img.title}</h6>
-      <img src="${img.src}" width="${img.width}" alt="" />
+      <img type="button" data-bs-toggle="modal" data-bs-target="#site${i}${index}Modal" src="${img.src}" width="${img.width}" alt="${img.title}" />
     </div>`;
     });
   });

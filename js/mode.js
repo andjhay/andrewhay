@@ -3,7 +3,6 @@ import { load, save } from "./storage.js";
 export function selectMode() {
   const darkMode = document.querySelector("#dark");
   const lightMode = document.querySelector("#light");
-
   const selectedMode = load("mode");
   if (selectedMode == null || selectedMode == "light") {
     save("mode", "light");
@@ -30,13 +29,15 @@ function applyMode(mode) {
   const body = document.querySelector("body");
   const footer = document.querySelector("footer");
   const changeDiv = document.querySelectorAll("div[data-id='1']");
-  const button = document.getElementById("go-to-portfolio");
+  const buttons = document.querySelectorAll("button");
   const noroffLogo = document.getElementById("noroff-logo");
   html.setAttribute("data-bs-theme", `${mode}`);
   if (mode == "dark") {
-    if (button) {
-      button.classList.remove("btn-background-black");
-      button.classList.add("btn-dark");
+    if (buttons) {
+      buttons.forEach((button) => {
+        button.classList.remove("btn-background-black");
+        button.classList.add("btn-dark");
+      });
     }
     if (noroffLogo) {
       noroffLogo.src = "./img/logo/noroff-logo.png";
@@ -51,9 +52,11 @@ function applyMode(mode) {
       div.classList.add("bg-dark");
     });
   } else {
-    if (button) {
-      button.classList.add("btn-background-black");
-      button.classList.remove("btn-dark");
+    if (buttons) {
+      buttons.forEach((button) => {
+        button.classList.add("btn-background-black");
+        button.classList.remove("btn-dark");
+      });
     }
     if (noroffLogo) {
       noroffLogo.src = "./img/logo/noroff-logo-dark.png";

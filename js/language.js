@@ -1,6 +1,7 @@
 import { load, save } from "./storage.js";
-
+const docTitle = document.getElementById("doc-title");
 const homeNav = document.getElementById("home");
+const frontNav = document.getElementById("front");
 const about = document.getElementById("about");
 const content = document.getElementById("content");
 const mainTitle = document.getElementById("main-title");
@@ -41,7 +42,8 @@ export function selectLanguage(path) {
 }
 
 function applyEnglish(currentPage) {
-  homeNav.innerHTML = "<b>Home</b>";
+  homeNav.innerHTML = "Home";
+  frontNav.innerHTML = "Front-End";
   if (currentPage == "" || currentPage == "index") {
     about.innerHTML = "About Me";
     content.innerHTML = `
@@ -67,6 +69,7 @@ function applyEnglish(currentPage) {
     cvButton.innerHTML = "Download my CV";
   }
   if (currentPage == "portfolio") {
+    docTitle.innerHTML = "Andrew Hay - Front-End";
     mainTitle.innerHTML = "Front-End Development";
     backgroundTitle.innerHTML = "My Background";
     skillsTitle.innerHTML = "My Skills";
@@ -76,13 +79,14 @@ function applyEnglish(currentPage) {
     planning.innerHTML = "Project Planning (Kanban, Gantt)";
     applications.innerHTML = "Applications";
     browser.innerHTML = "Accessibility and SEO";
-    content.innerHTML = "Front-End Development 2 year online studies at" + " ";
+    content.innerHTML = "Front-End Development higher professional degree from" + " ";
     management.innerHTML = "Project Management Systems";
   }
 }
 
 function applyNorsk(currentPage) {
-  homeNav.innerHTML = "<b>Hjem</b>";
+  homeNav.innerHTML = "Hjem";
+  frontNav.innerHTML = "Frontend";
   if (currentPage == "" || currentPage == "index") {
     about.innerHTML = "Om Meg";
     content.innerHTML = `
@@ -104,11 +108,12 @@ function applyNorsk(currentPage) {
   <p>
     Venligst kontakt meg via <a href="mailto: contact@andrewhay.no"><b>contact@andrewhay.no</b></a> med spørsmål.
     </p>`;
-    portfolioButton.innerHTML = `Til Front-End Portefølje`;
+    portfolioButton.innerHTML = `Til Frontend Portefølje`;
     cvButton.innerHTML = "Last ned min CV";
   }
   if (currentPage == "portfolio") {
-    mainTitle.innerHTML = "Front-End Utvikling";
+    docTitle.innerHTML = "Andrew Hay - Frontend";
+    mainTitle.innerHTML = "Frontend Utvikling";
     backgroundTitle.innerHTML = "Min Bakgrunn";
     skillsTitle.innerHTML = "Mine Ferdigheter";
     portfolioTitle.innerHTML = "Portefølje";
@@ -117,7 +122,7 @@ function applyNorsk(currentPage) {
     planning.innerHTML = "Prosjekt Planlegging (Kanban, Gantt)";
     applications.innerHTML = "Programvarer";
     browser.innerHTML = "Tilgjengelighet and SEO";
-    content.innerHTML = "Front-End Utvikling 2 årig nettstudie ved" + " ";
+    content.innerHTML = "Frontend Utvikling høyere fagskolegrad fra" + " ";
     management.innerHTML = "Prosjekt Kontroll Systemer";
   }
 }

@@ -1,5 +1,20 @@
 const portfolioProjects = [
   {
+    title: "Noroff Project - React E-Commerce",
+    keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
+    design_images: [],
+    site_images: [
+      { title: "", src: "img/process/ecommercefull.png", width: "100%" },
+      { title: "", src: "img/process/ecommercemobile.jpg", width: "50%" },
+    ],
+    description_en:
+      "Course assignment for javascript framework module with the goal of building a first React project.",
+    description_no: "",
+    xd_link: "",
+    web_link: "https://ecommerce-ca-andrewhay.netlify.app/",
+    github_link: "https://github.com/andjhay/ecom-ca-andrewhay",
+  },
+  {
     title: "Vardeneset Idrettsforening",
     keywords: ["Bootstrap", "Wordpress API", "Google SEO", "Javascript", "HTML", "CSS", "SASS"],
     design_images: [

@@ -11963,8 +11963,6 @@ html {
   width: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
-  position: relative;
-  left: 0;
   opacity: 1;
   transition: all 0.15s ease-out;
   transform-origin: center left;
@@ -12003,17 +12001,48 @@ html {
   opacity: 1;
 }
 
+#sun:hover,
+#moon:hover {
+  transition: all 1s ease-out;
+  transform-origin: center;
+  transform: rotate(360deg);
+}
+
 .btn-check:checked + .btn {
   opacity: 100%;
   border: none;
+}
+
+.btn:hover {
+  color: #1eaaaa;
 }
 
 svg path {
   fill: #dee2e6;
 }
 
-#logo path {
-  fill: #1eaaaa;
+@keyframes logo {
+  0% {
+    right: 0px;
+  }
+  25% {
+    right: 10px;
+  }
+  50% {
+    right: 0px;
+  }
+  75% {
+    right: -10px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+#logo:hover {
+  position: relative;
+  animation-name: logo;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=styles.css.map */

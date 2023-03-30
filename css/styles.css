@@ -12045,4 +12045,14 @@ svg path {
   animation-iteration-count: infinite;
 }
 
+#profile-pic {
+  height: 35vh;
+}
+
+@media (max-width: 767.98px) {
+  #profile-pic {
+    height: 25vh;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

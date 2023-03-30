@@ -104,3 +104,13 @@ svg path {
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
 }
+
+#profile-pic {
+  height: 35vh;
+}
+
+@include media-breakpoint-down(md) {
+  #profile-pic {
+    height: 25vh;
+  }
+}

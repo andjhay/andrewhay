@@ -4,8 +4,9 @@ const portfolioProjects = [
     keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
     design_images: [],
     site_images: [
-      { title: "", src: "img/process/ecommercefull.png", width: "100%" },
       { title: "", src: "img/process/ecommercemobile.jpg", width: "50%" },
+      { title: "", src: "img/process/ecommercemobileopen.jpg", width: "50%" },
+      { title: "", src: "img/process/ecommercefull.png", width: "100%" },
     ],
     description_en:
       "Course assignment for javascript framework module with the goal of building a first React project.",
@@ -130,7 +131,11 @@ export function loadPortfolio() {
   portfolioProjects.forEach((project, i) => {
     portfolioContent.innerHTML += `<div data-id="1" class="bg-light card my-3 shadow p-3">
           <h3 class="py-3">${project.title}</h3>
-          ${project.keywords != "" ? `<ul id="keywords${i}" class="list-group me-auto"></ul>` : ``}
+          ${
+            project.keywords != ""
+              ? `<ul id="keywords${i}" class="list-group list-group-horizontal-md me-auto"></ul>`
+              : ``
+          }
           ${
             project.design_images.length > 0
               ? `<h4 class="pt-3 text-center border-bottom border-2 border-secondary">Design</h4>`

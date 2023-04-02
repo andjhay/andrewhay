@@ -12015,6 +12015,7 @@ html {
 
 .btn:hover {
   color: #1eaaaa;
+  border-radius: 15px;
 }
 
 svg path {
@@ -12024,29 +12025,35 @@ svg path {
 @keyframes logo {
   0% {
     right: 0px;
+    rotate: -5deg;
   }
   25% {
     right: 10px;
+    rotate: 5deg;
   }
   50% {
     right: 0px;
+    rotate: -5deg;
   }
   75% {
     right: -10px;
+    rotate: 5deg;
   }
   100% {
     right: 0px;
+    rotate: -5deg;
   }
 }
 #logo:hover {
   position: relative;
   animation-name: logo;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
 
 #profile-pic {
   height: 35vh;
+  border-radius: 50%;
 }
 
 @media (max-width: 767.98px) {

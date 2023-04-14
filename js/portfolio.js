@@ -1,5 +1,20 @@
 const portfolioProjects = [
   {
+    title: "Handleliste React",
+    keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
+    design_images: [],
+    site_images: [
+      { title: "", src: "img/process/handlelistemobile.jpg", width: "50%" },
+      { title: "", src: "img/process/handlelistefullsize.png", width: "100%" },
+    ],
+    description_en: `Shopping list application built using react and API from <a href="https://kassal.app/">https://kassal.app/</a>
+    `,
+    description_no: "",
+    xd_link: "",
+    web_link: "https://handleliste-andrewhay.netlify.app/",
+    github_link: "https://github.com/andjhay/handleliste-react",
+  },
+  {
     title: "Noroff Project - React E-Commerce",
     keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
     design_images: [],

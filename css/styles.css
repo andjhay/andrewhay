@@ -12061,5 +12061,18 @@ svg path {
     height: 25vh;
   }
 }
+a img:not(footer a img, p a img, nav a img),
+label img,
+label svg {
+  width: 30px;
+}
+
+p span img {
+  width: 60px;
+}
+
+nav a img {
+  width: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */

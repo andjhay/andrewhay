@@ -49,12 +49,16 @@ function applyEnglish(currentPage) {
     content.innerHTML = `
     <p>
     My name is Andrew Hay, <br/>
-    I am new to developing and will have completed a 2 year program focused on Front-End come start of the summer 2023. <br/>
-    The purpose of this page is to display my portfolio of Front-End development projects and a overview of my skills.
+    The purpose of this page is to display my portfolio of Front-End development projects and a overview of my skills as a developer.
     </p>
     
     <p>
-    Currently I am working on my own as self-employed while I am actively applying for fulltime positions as a developer.<br/>
+    I am currently employed full-time as a System Developer by <a href="https://omega365.com/" target="_blank" 
+    rel="noopener noreferrer">Omega 365</a><span><img class="m-1" src="./img/icons/omega-365-logo.svg" alt="Jest icon" /></span> 
+    </p>
+    <p>
+    I will continue to operate my own sole proprietorship to work on other tasks when i have time as long as they are non-competing. 
+    <br/>
     Hay Freelance - Org nr
     <a
     href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=927481189"
@@ -91,11 +95,13 @@ function applyNorsk(currentPage) {
     about.innerHTML = "Om Meg";
     content.innerHTML = `
     <p>Mitt navn er Andrew Hay, <br/>
-    jeg er ny som utvikler og vil ha fullført et 2 års program med hoved fokus på Front-End ved begynnelsen av sommeren 2023. <br/>
-    Formålet med denne siden er å vise frem min portefølje av Front-End utviklet prosject og et overblikk av mine ferdigheter som utvikler.
+    Formålet med denne siden er å vise frem min portefølje av Front-End utviklings prosjekt og et overblikk av mine ferdigheter som utvikler.
     </p>
-    
-    <p>For øyeblikket arbeider jeg selvstendig mens jeg aktivt søker en fulltids stilling som utvikler. <br/>
+    <p>For øyeblikket er jeg ansatt i fulltids stilling som Systemutvikler i <a href="https://omega365.com/" target="_blank" 
+    rel="noopener noreferrer">Omega 365</a><span><img src="./img/icons/omega-365-logo.svg" alt="Omega 365 icon" /></span>  
+    </p>
+    <p>
+    Jeg kommer til å fortsette å jobbe selvstendig på andre oppgaver når jeg har tid så lenge de ikke er konkurrerende.<br/>
     Hay Freelance - Org nr
     <a
       href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=927481189"

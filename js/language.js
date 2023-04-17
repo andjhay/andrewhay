@@ -53,7 +53,7 @@ function applyEnglish(currentPage) {
     </p>
     
     <p>
-    I am currently employed full-time as a System Developer by <a href="https://omega365.com/" target="_blank" 
+    I am employed full-time as a System Developer by <a href="https://omega365.com/" target="_blank" 
     rel="noopener noreferrer">Omega 365</a><span><img class="m-1" src="./img/icons/omega-365-logo.svg" alt="Jest icon" /></span> 
     </p>
     <p>
@@ -97,7 +97,7 @@ function applyNorsk(currentPage) {
     <p>Mitt navn er Andrew Hay, <br/>
     Formålet med denne siden er å vise frem min portefølje av Front-End utviklings prosjekt og et overblikk av mine ferdigheter som utvikler.
     </p>
-    <p>For øyeblikket er jeg ansatt i fulltids stilling som Systemutvikler i <a href="https://omega365.com/" target="_blank" 
+    <p>Jeg er ansatt i fulltids stilling som Systemutvikler hos <a href="https://omega365.com/" target="_blank" 
     rel="noopener noreferrer">Omega 365</a><span><img src="./img/icons/omega-365-logo.svg" alt="Omega 365 icon" /></span>  
     </p>
     <p>

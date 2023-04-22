@@ -12061,7 +12061,7 @@ svg path {
     height: 25vh;
   }
 }
-a img:not(footer a img, p a img, nav a img),
+a img:not(footer a img, p a img, nav a img, #noroff-logo),
 label img,
 label svg {
   width: 30px;
@@ -12073,6 +12073,10 @@ p span img {
 
 nav a img {
   width: 200px;
+}
+
+#noroff-logo {
+  width: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

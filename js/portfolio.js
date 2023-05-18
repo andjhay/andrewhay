@@ -1,5 +1,24 @@
 const portfolioProjects = [
   {
+    title: "Noroff Project - React Holidaze Booking Site",
+    keywords: ["React", "Tailwind", "API", "Javascript", "HTML", "CSS"],
+    design_images: [
+      { title: "Figma Prototype", src: "img/process/holidazedesignprototype.png", width: "100%" },
+      { title: "Planning tools", src: "img/process/holidazeplanningprocess.png", width: "100%" },
+    ],
+    site_images: [
+      { title: "", src: "img/process/holidazemobile.jpg", width: "50%" },
+      { title: "", src: "img/process/holidazefull.png", width: "100%" },
+    ],
+    description_en: `Airbnb type holiday booking page made using reactand tailwind css framework. Made as final exam for the 2 year Noroff Front-End development higher professional degree.
+    `,
+    description_no: "",
+    xd_link:
+      "https://www.figma.com/file/HTEpgmisgpJaju2UhbR8gy/Project-Exam-2-Holidaze-Andrew-Hay?type=design&node-id=1%3A3&t=nERVpwMgAAtkbbrB-1",
+    web_link: "https://project-exam-2-andrew-hay.netlify.app/",
+    github_link: "https://github.com/andjhay/project-exam-2-andrew-hay",
+  },
+  {
     title: "Handleliste React",
     keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
     design_images: [],
@@ -172,7 +191,7 @@ export function loadPortfolio() {
               href="${project.xd_link}"
               target="_blank"
               rel="noopener noreferrer"
-              ><b>Link to Adobe XD to see the rest of the prototype design.</b>
+              ><b>Link to Design Prototype</b>
             </a>
           </p>`
               : ``

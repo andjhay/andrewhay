@@ -1,14 +1,14 @@
 const portfolioProjects = [
   {
     title: "Noroff Project - React Holidaze Booking Site",
-    keywords: ["React", "Tailwind", "API", "Javascript", "HTML", "CSS"],
+    keywords: ["React", "Tailwind", "REST API", "Javascript", "HTML", "CSS", "Jest", "Cypress", "Figma"],
     design_images: [
       { title: "Figma Prototype", src: "img/process/holidazedesignprototype.png", width: "100%" },
       { title: "Planning tools", src: "img/process/holidazeplanningprocess.png", width: "100%" },
     ],
     site_images: [
-      { title: "", src: "img/process/holidazemobile.jpg", width: "50%" },
       { title: "", src: "img/process/holidazefull.png", width: "100%" },
+      { title: "", src: "img/process/holidazemobile.jpg", width: "50%" },
     ],
     description_en: `Airbnb type holiday booking page made using reactand tailwind css framework. Made as final exam for the 2 year Noroff Front-End development higher professional degree.
     `,
@@ -23,8 +23,8 @@ const portfolioProjects = [
     keywords: ["React", "Bootstrap", "API", "Javascript", "HTML", "CSS"],
     design_images: [],
     site_images: [
-      { title: "", src: "img/process/handlelistemobile.jpg", width: "50%" },
       { title: "", src: "img/process/handlelistefullsize.png", width: "100%" },
+      { title: "", src: "img/process/handlelistemobile.jpg", width: "50%" },
     ],
     description_en: `Shopping list application built using react and API from <a href="https://kassal.app/">https://kassal.app/</a>
     `,

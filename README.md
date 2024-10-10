@@ -1,7 +1,5 @@
 # Andrew Hay Front-End Portfolio Site
 
-### Hosted Site
-https://andrewhay.no/
 
 <img width="1000" alt="Portfolio Site" src="https://github.com/andjhay/andrewhay/assets/88853764/51400062-4f89-4850-bb2b-c926af91482b">
 
